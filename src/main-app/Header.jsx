@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Contact, Info, LayoutDashboard, LibraryBig, Search } from "lucide-react"
+import { Contact, Home, Info, LayoutDashboard, LibraryBig, Search } from "lucide-react"
 import logo from "../assets/logo.svg"
 
 export default function Header() {
@@ -11,6 +11,9 @@ export default function Header() {
         <img src={logo} alt="logo" />
       </div>
       <div>
+        <Button variant="ghost">
+          <Home className="mr-2 h-4 w-4" /> Home
+        </Button>
         <Button variant="ghost">
           <LibraryBig className="mr-2 h-4 w-4" /> My Courses
         </Button>
